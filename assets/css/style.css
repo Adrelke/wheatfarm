@@ -1,0 +1,52 @@
+body {
+    background-color:#FFF9C4;
+}
+
+header {
+    text-align: center;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    background: #F57F17;
+    width: 140px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #FFA726;
+}
+section {
+    display: flex;
+}
+.bonus {
+    color: green;
+}
+
+.boutons {
+    display: flex;
+}
+
+.event {
+    border: 1px solid black;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wheat Farm</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/icons8-wheat-50.png">
+</head>
+
+<body>
+    <header>
+        <h1>Wheat Farm</h1>
+    </header>
+    <div class="centre">
+        <button onclick="increment(wheat.increment)">Faucher du blé</button>
+        <h2 id="wheat">0</h2>
+    </div>
+    <section>
+        <div class="boutons w60">
+            <div class="w50">
+                <div>
+
+                </div>
+                <button onclick="buyCow()" id="canBuyCow">Vache</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodCow">0</span>
+                </span>
+                Vaches :
+                <span id="cows">0</span>
+                Cout :
+                <span id="cowCost">25</span>
+                </br>
+                </br>
+                <button onclick="buyTracteur()" id="canBuyTracteur">Tracteur</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodTracteur">0</span>
+                </span>
+                Tracteurs :
+                <span id="tracteur">0</span>
+                Cout :
+                <span id="tracteurCost">100</span>
+                </br>
+                </br>
+                <button onclick="buyMoissonneuse()" id="canBuyMoissonneuse">Moissonneuse</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodMoissonneuse">0</span>
+                </span>
+                Moissonneuses :
+                <span id="moissonneuse">0</span>
+                Cout :
+                <span id="moissonneuseCost">500</span>
+                </br>
+                </br>
+                <button onclick="buySuperFermier()" id="canBuySuperFermier">Super-Fermier</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodSuperFermier">0</span>
+                </span>
+                Super-Fermiers :
+                <span id="superFermier">0</span>
+                Cout :
+                <span id="superFermierCost">3000</span>
+                </br>
+                </br>
+                <button onclick="buyTracteurNitro()" id="canBuyTracteurNitro">Tracteur-Nitro</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodTracteurNitro">0</span>
+                </span>
+                Tracteurs-Nitro :
+                <span id="tracteurNitro">0</span>
+                Cout :
+                <span id="tracteurNitroCost">10000</span>
+            </div>
+            <div class="w50">
+                <button onclick="buyVacheOgm()" id="canBuyVacheOgm">Vache OGM</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodVacheOgm">0</span>
+                </span>
+                Vache OGM :
+                <span id="vacheOgm">0</span>
+                Cout :
+                <span id="vacheOgmCost">40000</span>
+                </br>
+                </br>
+                <button onclick="buyFauxSpectral()" id="canBuyFauxSpectral">Faux Spectral</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodFauxSpectral">0</span>
+                </span>
+                 Faux Spectral :
+                <span id="fauxSpectral">0</span>
+                Cout :
+                <span id="fauxSpectralCost">200000</span>
+                </br>
+                </br>
+                <button onclick="buyFermierMinecraft()" id="canBuyFermierMinecraft">Fermier Minecraft</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodFermierMinecraft">0</span>
+                </span>
+                 Fermier Minecraft :
+                <span id="fermierMinecraft">0</span>
+                Cout :
+                <span id="fermierMinecraftCost">1500000</span>
+                </br>
+                </br>
+                <button onclick="buyExtraterrestre()" id="canBuyExtraterrestre">???</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodExtraterrestre">0</span>
+                </span>
+                <span id="extraName">???</span>
+                <span id="extraterrestre"></span>
+                Cout :
+                <span id="extraterrestreCost">???</span>
+                </br>
+                </br>
+                <button onclick="buyVaisseau()" id="canBuyVaisseau">???</button>
+                <span class="bonus">Bonus Blé :
+                    <span id="prodVaisseau">0</span>
+                </span>
+                <span id="vaisseauName">???</span>
+                <span id="vaisseau"></span>
+                Cout :
+                <span id="vaisseauCost">???</span>
+            </div>
+        </div>
+        <div class="event w40" id="evenement">
+            <h2>Evenements:</h2>
+        </div>
+    </section>
+
+    <h2>Upgrades</h2>
+    <button onclick="upgrade('clickplus')" id="bonusClick">Fauchage 2x plus rapide </br> (500 blés)</button>
+
+    <script src="assets/js/app.js"></script>
+    <button onclick="save()">Save</button>
+    <button onclick="load()">Load</button>
+</body>
+
+</html>
